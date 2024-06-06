@@ -1,0 +1,30 @@
+.account{
+    display: flex;
+    position: relative;
+    background-color: rgb(249, 249, 249);
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    gap:10px;
+}
+
+.flex > div {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .account {
+        flex-direction: column !important;
+    }
+  
+}
+
+img {
+    margin: 20px auto;
+}

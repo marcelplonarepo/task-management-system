@@ -1,0 +1,60 @@
+GET http://localhost:5000/users
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+  "password": "necklesOMAY!2",
+  "email": "youeven@gmail.com2"
+}
+###
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+  "username": "Bear23",
+  "password": "necklesOMAY!23",
+  "email": "youeven@gmail.com23"
+}
+
+###
+DELETE http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "email": "noneed@gmail.com",
+    "password": "qwerty123"
+}
+
+###
+GET http://localhost:5000/users/3/tasks
+
+###
+
+POST http://localhost:5000/users/6/tasks
+Content-Type: application/json
+
+{
+  "text": "Humongus",
+  "deadline": "2024-03-05 12:34:24",
+  "points": 14,
+  "friendId": 2
+}
+
+###
+
+DELETE http://localhost:5000/users/3/tasks/3
+
+### 
+PATCH http://localhost:5000/users/6/tasks/3
+Content-Type: application/json
+
+{
+  "status": 1
+}
+
+###
+GET http://localhost:5000/users/3/tasks/others
+###
+GET http://localhost:5000/users/1/search/Ar

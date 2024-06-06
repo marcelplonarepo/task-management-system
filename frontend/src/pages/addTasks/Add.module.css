@@ -1,0 +1,245 @@
+:root {
+    --toggle:hsl(240, 100%, 93%);
+}
+
+.add {
+    display: flex;
+    position: relative;
+    background-color: #fafafa;
+    align-items: center;
+    color: rgb(21, 21, 154);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 70px);
+    max-height: 100vh;
+    overflow-y: auto;
+    align-items: center;
+}
+
+.title {
+    font-size: 42px;
+    color: rgb(15, 26, 146);
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.095);
+    border-radius: 15px;
+    z-index: 1;
+    position: relative;
+    margin: 15px;
+}
+
+.form input, select{
+    width: 205px;
+    line-height: 2;
+    color: black;
+}
+
+.form select {
+    height: 32px;
+    margin-right: 50px;
+}
+
+
+.form textarea {
+    width: 240px;
+    line-height: 2;
+    color: black;
+}
+
+.form textarea {
+    height: calc(3.5 * 16px);
+    overflow: hidden;
+    font-family: inherit;
+    color: black;
+}
+
+.form>div {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.text {
+    margin: 0 auto;
+}
+
+.text textarea {
+    width: 460px;
+}
+
+
+.form .toggle {
+    margin: 0 auto;
+}
+.form .toggle> .switch {
+    width: 460px;
+    height: 60px;
+    background-color: var(--toggle);
+    display: flex;
+    border-radius: 12px;
+}
+
+.form .toggle>.switch>div{
+    width: 50%;
+    height: 100%;
+    background-color: var(--toggle);
+    color: #2b46cd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    border: 7px solid var(--toggle);
+    border-radius: 12px;
+   
+}
+
+
+.form .toggle .notselected {
+    cursor: pointer;
+}
+
+.form .toggle  .notselected:hover {
+    font-size: 26px;
+}
+
+.form .toggle>div>div.selected {
+    background-color: #bcbceb;
+    color: rgb(13, 7, 96);
+    text-shadow: 0px 0px 5px rgba(54, 28, 157, 0.261);
+    font-size: 28px;
+}
+.form>div>div>label  {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.add input[type=submit] {
+    outline: none;
+    border: none;
+    background-color: rgb(15, 26, 146);
+    color: white;
+    border-radius: 6px;
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 22px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+.search{
+display: flex;
+margin: 0 auto;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top:10px;
+}
+
+.search div{
+    border: 1px solid rgb(175, 175, 175);
+    height: 100%;
+    border-width: 1px 0px 1px 1px !important;
+    border-radius: 3px 0px 0px 3px !important;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search div svg{
+    stroke: black;
+    fill:white;
+    width:25px;
+    height: 25px;
+}
+
+.search input{
+    border-width: 1px 1px 1px 0 !important;
+    border-radius: 0 3px 3px 0 !important;
+    outline: none;
+    padding-left:10px ;
+}
+
+.form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.users{
+    font-size: 24px;
+    margin:0 auto;
+    cursor: pointer;
+    min-width: 300px;
+    text-align: center;
+    background-color: #f3f3fc;
+}
+
+.users:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.214) inset;
+}
+
+.users.friend{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.214) inset;
+    background-color: #ededff;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .add {
+        flex-direction: column !important;
+    }
+
+    .form {
+        scale: 0.9;
+        margin:0;
+    }
+
+    .container{
+        width: 100%;
+        overflow: visible;
+    }
+  
+}
+
+@media only screen and (max-width: 530px) {
+
+
+    .form {
+        scale: 0.8;
+        margin:0;
+    }
+
+    .container{
+        width: 100%;
+    }
+  
+}
+
+@media only screen and (max-width: 460px) {
+
+
+    .form {
+        scale: 0.7;
+        margin:0;
+    }
+
+    .container{
+        width: 100%;
+    }
+  
+}

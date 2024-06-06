@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(15, 26, 146);
+    height: 100vh;
+    width: 70px;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.item > svg {
+    width:40px;
+    height: 40px;
+
+}
+
+.stroke{
+    fill: rgba(255, 255, 255, 0);
+    stroke: rgb(255, 255, 255);
+}
+
+.fill{
+    stroke: rgba(255, 255, 255, 0);
+    fill: rgb(255, 255, 255);
+
+}
+
+
+
+.item > div {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.fill > div{
+    margin-top: 4px;
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar {
+        flex-direction: row;
+        height: 70px;
+        width: 100%;
+        justify-content: center;
+        gap:30px;
+    }
+
+}

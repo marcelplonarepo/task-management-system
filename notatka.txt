@@ -1,0 +1,1 @@
+Baza danych zostanie sama utworzona przy uruchomieniu aplikacji.
